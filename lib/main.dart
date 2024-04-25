@@ -182,6 +182,9 @@ class DashboardPage extends StatelessWidget {
             ListTile(
               leading: Icon(Icons.exit_to_app),
               title: Text('Sair da conta'),
+              onTap: () {
+                  Navigator.pushNamed(context, '/login');
+                },
             ),
             DrawerHeader(
               child: ListTile(
